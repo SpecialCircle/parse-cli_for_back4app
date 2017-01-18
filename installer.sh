@@ -13,7 +13,7 @@ case `uname` in
     export url="https://github.com/ParsePlatform/parse-cli/releases/download/release_${latest}/parse_linux"
    ;;
   "Darwin" )
-    export latest=`curl -X GET https://api.parse.com/1/supported?version=latest|grep -Eo '(\d.\d.\d)'`
+    export latest=`curl -X GET https://api.parse.com/1/supported?version=latest|grep -Po '(\d.\d.\d)'`
     export url="https://github.com/ParsePlatform/parse-cli/releases/download/release_${latest}/parse"
     ;;
 esac
