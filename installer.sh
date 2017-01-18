@@ -29,3 +29,4 @@ mv /tmp/parse.tmp /usr/local/bin/parse
 chmod 755 /usr/local/bin/parse
 
 echo "export PARSE_SERVER=https://parsecli.back4app.com" >> ~/.bash_profile
+export PARSE_SERVER=https://parsecli.back4app.com
